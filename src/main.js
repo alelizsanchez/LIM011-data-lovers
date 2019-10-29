@@ -6,7 +6,6 @@ import LoL from './data/lol/lol.js'
 
 const name = document.getElementById('name')
 
-// import lol from './data/lol/lol.js';
 
 console.log(example);
 

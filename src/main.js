@@ -1,33 +1,16 @@
 /**
  * import POKEMON from './data/pokemon/pokemon.js'
- * import POTTER from './data/potter/potter.js' */
+ import LoL from './data/lol/lol.js'
+ * import POTTER from './data/potter/potter.js'
+ */
 import LoL from './data/lol/lol.js'
+import { seeToChampion } from './data.js';
+let lolData = Object.values(LoL.data)
 
-
-const name = document.getElementById('name')
-
-
-console.log(example);
+document.querySelector('#root').innerHTML = seeToChampion(lolData)
 
 /*
  * console.log(POKEMON);
- * console.log(POTTER);*/
-
-console.log(LoL)
-let lolData = Object.values(LoL.data);
-//  const lolData = LoL.data;
- const $root = document.querySelector('#root');
-
-const playing = (data) => {
-    let almacenar = '';
-    for (let i = 0; i < data.length; i++) {
-    let item = `<div class="contenedor flex" >
-      <img class="img__lol" src="${data[i].splash}"/>
-      <p class ="name"> ${data[i].name}</p>
-      </div>`;
-        almacenar += item;
-    }
-    return almacenar;
-};
-
-$root.innerHTML = playing(lolData);
+ * console.log(LoL);
+ * console.log(POTTER)
+*/

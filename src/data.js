@@ -6,6 +6,7 @@
 //   return 'example';
 // };
 export const mostrarCampiones = (data) => {
+  // eslint-disable-next-line no-console
   console.log(data);
   let almacenar = '';
   // eslint-disable-next-line array-callback-return
@@ -15,6 +16,7 @@ export const mostrarCampiones = (data) => {
     ${extraer.name}
     `;
   });
+  // eslint-disable-next-line no-console
   return console.log(almacenar);
 };
 

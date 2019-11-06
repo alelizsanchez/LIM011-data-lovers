@@ -10,52 +10,29 @@
 </head>
 
 <body>
-  <input type="checkbox" class="checkbox" id="check">
-  <label class="menu__label" for="check">|||</label>
-  <div class="left__panel">
-    <nav class="nav" id="nav">
-      <ul class="nav__menu">
-        <li id="inicio"><a href="#" class="btn">INICIO</a></li>
-        <li id="campeones"><a href="#" class="btn">CAMPEONES</a></li>
-        <li><a class="btn" href="https://lan.leagueoflegends.com/es/game-info/items/">OBJETOS</a></li>
-        <li><a class="btn" href="https://lan.leagueoflegends.com/es/game-info/summoners/spells/">INVOCADORES</a></li>
-      </ul>
-    </nav>
+  <header>
+    <img src="/imagenes/campeones2.png" class="encabezado">
+  </header>
+    <div>
+    <select name="select" id="select">
+      <option value="Aatrox">Aatrox</option>
+      <option value="value2" selected>Value 2</option>
+      <option value="value3">Value 3</option>
+    </select>
+    <div id="prueba"></div>
+    <div id="root" class="contenedor__root flex"></div>
+
+           <!--modal-->
+           <div id="mi-modal" class="modal  hide">
+            <!--modal content-->
+            <div class="modal__content">
+              <span id="close" class="close">&times;</span>
+              <div id="informacion-lol" class="info__modal flex"></div>
+            </div>
+          </div> 
+
   </div>
-  <main>
-    <div class="parrafo">
-      <img class="img__header flex" src="img/logoab.png" alt="Imagen-lol">
-      <h1>campiones de las legendas</h1>
-      <h2>empieza ya!</h2>
-    </div>
-    <!-- <div class="filtrar">
-      <select class="orden" id="tipo">
-        <option>TIPO</option>
-        <option value="Assassin">Asesinos</option>
-        <option value="Fighter">Luchadores</option>
-        <option value="Mage">Magos</option>
-        <option value="Marksman">Tiradores</option>
-        <option value="Support">Apoyo</option>
-        <option value="Tank">Tanques</option>
-      </select>
-      <select class="orden" id="ataque">
-        <option>FUERZA RELEVANTE</option>
-        <option value="0">Menor</option>
-        <option value="1">Mayor</option>
-      </select>
-    </div> -->
-    <div class="contenedor__root" id="root"></div>
-    <script type="module" src="main.js"></script>
-  </main>
-  <footer>
-    <div class="txt__footer">
-      <p> Created by AlelizSanchez® & Natalia® </p>
-      <div class="icon-social">
-        <a href="#" class="icon-facebook2"></a>
-        <a href="#" class="icon-instagram"></a>
-      </div> -->
-    </div>
-  </footer>
+  <script type="module" src="main.js"></script>
 </body>
 
 </html>

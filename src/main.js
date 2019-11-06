@@ -3,23 +3,23 @@ import { seeToChampion } from './data.js';
 
 const lolData = Object.values(LoL.data);
 console.log(lolData);
-const $root = document.querySelector('#root');
-$root.innerHTML = seeToChampion(lolData);
-const $informacionModal = document.querySelector('#informacion-lol');
-const $miModal = document.querySelector('#mi-modal');
-const $close = document.querySelector('#close');
+const root = document.querySelector('#root');
+root.innerHTML = seeToChampion(lolData);
+const informacionModal = document.querySelector('#informacion-lol');
+const miModal = document.querySelector('#mi-modal');
+const close = document.querySelector('#close');
 
 // MODAL
-$root.addEventListener('click', () => {
+root.addEventListener('click', () => {
   // eslint-disable-next-line no-restricted-globals
   const eventIdChampion = event.target.parentElement.id;
   const newArray = lolData.map((obj) => obj.id).indexOf(eventIdChampion);
   // eslint-disable-next-line no-restricted-globals
   if (event.target.parentElement.getAttribute('name') === 'obtener') {
     // mostrar modal
-    $miModal.classList.remove('hide');
+    miModal.classList.remove('hide');
     // caracteristicas en el modal
-    $informacionModal.innerHTML = `
+    informacionModal.innerHTML = `
      
      <div class="contenido__modal flex">
 
@@ -45,8 +45,8 @@ $root.addEventListener('click', () => {
   }
 });
 
-$close.addEventListener('click', () => {
-  $miModal.classList.add('hide');
+close.addEventListener('click', () => {
+  miModal.classList.add('hide');
 });
 
 const encontrados = [];

@@ -14,5 +14,6 @@ export const seeToChampion = (champion) => {
                      ${extract.info.difficulty}</p>
                      </div>
                      `});
-   return allChampions;
+    
+   console.log(allChampions);
    }

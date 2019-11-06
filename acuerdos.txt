@@ -7,6 +7,11 @@ trabajo para el fin de semana
 -nos avisamos si cambiamos el trello.(antes de tomar una acción)
 Realizado 04/11/19:
 -historia 1
+
 Pendiente:
 -historia2
 -ale realizara el diseño de las cartas
+
+Pendiente para 05/11/19
+-realización del modal: mañana traer distintas maneras
+-un tipo de filtrado

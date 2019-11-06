@@ -1,8 +1,9 @@
-/* Manejo de data */
-
-// esta es una función de ejemplo
-
-export const example = () => {
-  return 'example';
+export const seeToChampion = (champion) => {
+  const allChampions = champion.map((extract) => `
+  <div class="cont-personajes flex" name="obtener"
+  id="${extract.id}">
+  <img src="${extract.img}" class="imagen-root"> 
+  <p class="name__lol">${extract.name}</p>
+</div>`);
+  return allChampions;
 };
-

@@ -28,8 +28,7 @@ root.addEventListener('click', () => {
      </div>
 
      <div class="lol__exp-bar"></div>
-  
-     <p class="titulo__lol">${lolData[newArray].title}</p> 
+     git <p class="titulo__lol">${lolData[newArray].title}</p> 
      <p class="descripcion__lol">${lolData[newArray].blurb}</p>
      </div>
     <div class="lol__info">

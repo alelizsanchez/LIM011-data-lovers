@@ -8,7 +8,7 @@ trabajo para el fin de semana
 Realizado 04/11/19:
 -historia 1
 
-Pendiente:
+Pendiente 05/11/2019:
 -historia2
 -ale realizara el diseño de las cartas
 

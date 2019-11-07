@@ -20,27 +20,40 @@ root.addEventListener('click', () => {
     miModal.classList.remove('hide');
     // caracteristicas en el modal
     informacionModal.innerHTML = `
-     
-     <div class="contenido__modal flex">
-
-     <div class="lol__picture">
-     <img  class="modal__img" src="${lolData[newArray].splash}"/>
+  <div class="contenido__modal flex">
+    <div class="lol__container">
+      <div class="lol__picture">
+        <div class="lol__mp">MP<span>${lolData[newArray].stats.mp}</span></div>
+        <img  class="lol__png" src="${lolData[newArray].splash}"/>
+        <div class="lol__exp-bar"></div>
+      </div>
+      <div class="lol__info">
+       <div class="lol__name">${lolData[newArray].name}<p class="size-medium">${lolData[newArray].stats.hpperlevel}</p></div>
+        <div class="lol__data">
+         <div class="info__tags">${lolData[newArray].tags}<p class="text--small">Tipo</p></div>
+         <div class="info__defense">${lolData[newArray].stats.hpperlevel}<p class="text--small">Nivel de vida</p></div>
+         <div class="info__magic">${lolData[newArray].info.magic}<p class="text--small">Ataque</p></div>
+        </div>
+       <div class="pkmn___status">
+          <div class="status__stardust">armadura<p class="nomtop">${lolData[newArray].stats.armor}</p></div>
+          <div class="status__lol"><p class="nomtop"></p></div>
+        </div>
+        <div class="lol__powerup">
+	       <div class="powerup__text">DAR MÁS</div>
+	       <div class="powerup__stardust">2720</div>
+	       <div class="powerup__candy">4</div>
+        </div>
+        <div class="lol__move space">
+					<div>title<p class="move--mtop">${lolData[newArray].title}</p></div>
+					<div>40</div>
+        </div>
+        <div class="lol__move">
+					<div class=" move__special">blurb<p class="move--mtop">${lolData[newArray].blurb}</p></div>
+					<div class=""></div>
+        </div>
+       </div>
      </div>
-
-     <div class="lol__exp-bar"></div>
-     git <p class="titulo__lol">${lolData[newArray].title}</p> 
-     <p class="descripcion__lol">${lolData[newArray].blurb}</p>
-     </div>
-    <div class="lol__info">
-     <div class="lol__name">${lolData[newArray].name}<p class="size-medium"></p></div>
-     <div class="pkmn__data"></div>
-      <div class="info__tags">${lolData[newArray].tags}<p class="text--small">Tipo</p></div>
-      <div class="info__defense"><p>Defensa:${lolData[newArray].info.defense}</p></div>
-      <div class="info__magic"><p>Magia:${lolData[newArray].info.magic}</p></div>
-    
-    </div>
-    </div>
-    `;
+  </div>`;
   }
 });
 

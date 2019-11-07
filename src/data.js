@@ -5,6 +5,5 @@ export const seeToChampion = (champion) => {
   <img src="${extract.img}" class="imagen-root"> 
   <p class="name__lol">${extract.name}</p>
 </div>`);
-
- console.log(allChampions);
+  return allChampions;
 };
